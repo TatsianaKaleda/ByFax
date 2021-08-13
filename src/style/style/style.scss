@@ -1,0 +1,45 @@
+@import "node_modules/reset-css/sass/reset.scss";
+
+html {
+  font-size: 10px;
+  transition: font-size 0.3s linear, padding 0.3s linear;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 9px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 7px;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 6px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import "shared";
+@import "setting";
+@import "font";
+@import "registration-bar";
+@import "main";
+@import "header";
+@import "send";
+@import "offer";
+@import "footer";

@@ -1,0 +1,140 @@
+.send {
+  position: relative;
+  padding-top: 80px;
+  background: #ffffff;
+
+  &-bg-ar {
+    position: absolute;
+    bottom: -23%;
+    right: 50%;
+    transform: translate(50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    & img {
+      position: absolute;
+      bottom: 18%;
+      right: 34%;
+    }
+
+    @media (max-width: 767px) {
+      bottom: -15%;
+    }
+
+    @media (max-width: 575px) {
+      bottom: -5%;
+    }
+  }
+
+  & .section-subtitle {
+    margin-top: 20px;
+  }
+
+  & .send-context {
+    margin-top: 50px;
+    margin-bottom: 90px;
+
+    @media (max-width: 575px) {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    & .card {
+      position: relative;
+      padding: 0;
+      border: none;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+      @media (max-width: 575px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &-img {
+
+        @media (max-width: 575px) {
+          width: fit-content;
+        }
+
+        & img {
+
+          @media (max-width: 991px) {
+            width: 60%;
+          }
+
+          @media (max-width: 575px) {
+            width: initial;
+          }
+        }
+
+        & .card-arrow {
+          position: absolute;
+          width: 97px;
+          object-fit: contain;
+          height: 21px;
+          bottom: 75%;
+          right: -25%;
+          z-index: 1;
+
+          @media (max-width: 991px) {
+            width: 50px;
+          }
+
+          @media (max-width: 767px) {
+            display: none;
+          }
+        }
+      }
+
+      &-title {
+        margin: 25px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #2c5871;
+
+        @media (max-width: 1199px) {
+          font-size: 18px;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 12px;
+        }
+        @media (max-width: 575px) {
+          margin-left: 20px;
+          font-size: 20px;
+        }
+        @media (max-width: 370px) {
+          margin-left: 10px;
+          font-size: 15px;
+        }
+      }
+
+      &-info {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7b7b7b;
+
+        @media (max-width: 991px) {
+          font-size: 12px;
+        }
+
+        @media (max-width: 575px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

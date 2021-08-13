@@ -1,0 +1,30 @@
+// Font vars
+$bebasNeueRegular: bebasNeueRegular, arial;
+$bebasNeueBold: bebasNeueBold, arial;
+
+@mixin font-face-mix($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url($file-path + ".eot?#iefix") format('embedded-opentype'),
+    url($file-path + ".woff") format('woff'),
+    url($file-path + ".otf") format('opentype'),
+    url($file-path + ".ttf") format('truetype');
+  }
+}
+
+@include font-face-mix("bebasNeueRegular", './src/style/font/BebasNeue Regular', 400);
+@include font-face-mix("bebasNeueBold", './src/style/font/BebasNeue Bold', 600);
+@mixin font-bebasNeueRegular {
+  font-family: $bebasNeueRegular;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-bebasNeueBold {
+  font-family: $bebasNeueBold;
+  font-weight: 600;
+  font-style: normal;
+}
+

@@ -1,0 +1,96 @@
+.main {
+  background: url('../../assets/img/bg-map.png') no-repeat left 55% top 135px #2c5871;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0 0 50% 50% / 7em;
+
+  @media (max-width: 768px) {
+    height: 470px;
+  }
+
+  @media (max-width: 743px) {
+    height: 370px;
+  }
+  @media (max-width: 370px) {
+    height: 450px;
+  }
+
+  &-container {
+    height: 100%;
+    background: url('../../assets/img/grafika-mainpage-1200.png') no-repeat bottom -130px right 35%;
+    min-height: 690px;
+
+    @media screen and (max-width: 991px){
+      background: url('../../assets/img/grafika-mainpage-992.png') no-repeat bottom -130px right 35%;
+    }
+
+    @media screen and (max-width: 768px){
+      background: url('../../assets/img/grafika-mainpage-768.png') no-repeat bottom 157px right 9%;
+    }
+
+    @media screen and (max-width: 743px) {
+      background: none;
+    }
+
+    @media screen and (max-width: 743px) {
+      & .container {
+        max-width: 100%;
+      }
+    }
+  }
+
+  & .info {
+    width: 50%;
+
+    @media screen and (max-width: 743px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-text {
+      margin-top: 100px;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+      }
+
+      &-title {
+        margin-bottom: 1rem;
+        @include font-bebasNeueBold;
+        font-size: 55px;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 991px) {
+          font-size: 34px;
+        }
+
+        @media screen and (max-width: 767px) {
+          font-size: 25px;
+        }
+      }
+
+      &-subtitle {
+        margin-bottom: 2rem;
+        @include font-bebasNeueRegular;
+        font-size: 29px;
+        color: #c1d64b;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 991px) {
+          font-size: 18px;
+        }
+      }
+      &-ps {
+        font-size: 21px;
+        font-weight: 400;
+        font-style: italic;
+        color: #ffffff;
+
+        @media screen and (max-width: 991px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
